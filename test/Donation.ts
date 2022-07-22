@@ -28,10 +28,6 @@ describe("Donation", function () {
 
         it("Should update counter with several donations", async function() {
             const {donation, daiHolder} =  await loadFixture(deployDonationContract);
-            /*[200,125,10,5].forEach(async (amount) => {
-                const donationReference = ethers.utils.parseEther(String(amount));
-                await donation.connect(daiHolder).donationSimulationInDAI(donationReference);
-            });*/
             const donation1 = ethers.utils.parseEther("200");
             const donation2 = ethers.utils.parseEther("125");
             const totalDonated = ethers.utils.parseEther("325");

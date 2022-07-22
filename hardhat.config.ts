@@ -22,16 +22,13 @@ const config: HardhatUserConfig = {
     polygon: {
       url: "https://polygon-mainnet.g.alchemy.com/v2/9wQlC99xFdlsIWieXSj05LWryz35jlRX",
       accounts: {
-        mnemonic: "trash marble include fashion discover leg health chicken scorpion giggle return march",
+        mnemonic: "",
         path: "m/44'/60'/0'/0",
         initialIndex: 0,
         count: 20,
         passphrase: ""
       },
     },
-    /*etherscan: {
-      apiKey: "662S742JBC4ICWB37I8TQ8UWTTV15PRIAV"
-    }*/
   }
 };
 
